@@ -106,7 +106,7 @@ Album ||--|{ Song
 Artist }|--|{ Song
 
 PlaylistCategory |o--|{ Playlist
-User ||--o{ Playlist
+User ||--o{ Playlist : Create
 Playlist }o--o{ Song
 
 PodcastCategory |o--|{ Podcast
@@ -119,4 +119,6 @@ Concert }o--|{ Artist
 User }o--o{ Artist : Follow
 
 User }o--o{Song : Liked Song
+
+User ||--o{ Playlist : Follow
 @enduml
