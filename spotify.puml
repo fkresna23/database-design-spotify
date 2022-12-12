@@ -83,6 +83,12 @@ entity User {
 }
 
 entity Concert {
-
+    * id : VARCHAR
+    --
+    * location : VARCHAR
+    * event_at : DATETIME
+    * url : VARCHAR
+    lon : DOUBLE
+    lat : DOUBLE
 }
 @enduml
