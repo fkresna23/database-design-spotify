@@ -25,7 +25,7 @@ entity Song {
     --
     * album_id : VARCHAR
     * title : VARCHAR
-    * duration : TIME
+    * duration : INT
 }
 
 entity Category {
@@ -65,7 +65,13 @@ entity Podcast {
 }
 
 entity Episode {
-
+    * id : VARCHAR
+    --
+    * podcast_id : VARCHAR
+    * title : VARCHAR
+    description : TEXT
+    published_at : DATE
+    duration : INT
 }
 
 entity User {
