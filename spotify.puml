@@ -46,6 +46,14 @@ entity Playlist {
     * user_id : VARCHAR
 }
 
+entity PlaylistCategory {
+     * id : VARCHAR
+        --
+     * name : VARCHAR
+     * image : VARCHAR
+     * icon : VARCHAR
+}
+
 entity PodcastCategory {
      * id : VARCHAR
         --
@@ -93,6 +101,13 @@ entity Concert {
 }
 
 Artist }|--|{ Album
+
 Album ||--|{ Song
 Artist }|--|{ Song
+
+PlaylistCategory |o--|{ Playlist
+User ||--|{ Playlist
+Playlist }o--o{ Song
+
+
 @enduml
