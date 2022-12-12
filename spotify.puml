@@ -21,7 +21,11 @@ entity Album {
 }
 
 entity Song {
-
+    * id : VARCHAR
+    --
+    * album_id : VARCHAR
+    * title : VARCHAR
+    * duration : TIME
 }
 
 entity Category {
