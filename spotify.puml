@@ -114,4 +114,5 @@ User ||--o{ Podcast
 
 Podcast ||--o{ Episode
 
+Concert }o--|{ Artist
 @enduml
