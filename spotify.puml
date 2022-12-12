@@ -100,25 +100,27 @@ entity Concert {
     lat : DOUBLE
 }
 
-Artist }|--|{ Album
+Artist }|--|{ Album : Has Album
 
-Album ||--|{ Song
-Artist }|--|{ Song
+Album ||--|{ Song : Contains
+Artist }|--|{ Song : Sing
 
-PlaylistCategory |o--|{ Playlist
+PlaylistCategory |o--|{ Playlist : Contains
 User ||--o{ Playlist : Create
-Playlist }o--o{ Song
+Playlist }o--o{ Song : Contains
 
-PodcastCategory |o--|{ Podcast
-User ||--o{ Podcast
+PodcastCategory |o--|{ Podcast : Contains
+User ||--o{ Podcast : Create
 
-Podcast ||--o{ Episode
+Podcast ||--o{ Episode : Contains
 
-Concert }o--|{ Artist
+Concert }o--|{ Artist : Perform
 
 User }o--o{ Artist : Follow
 
 User }o--o{Song : Liked Song
 
 User ||--o{ Playlist : Follow
+
+
 @enduml
