@@ -117,4 +117,6 @@ Podcast ||--o{ Episode
 Concert }o--|{ Artist
 
 User }o--o{ Artist : Follow
+
+User }o--o{Song : Liked Song
 @enduml
