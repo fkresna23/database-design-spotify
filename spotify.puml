@@ -106,8 +106,9 @@ Album ||--|{ Song
 Artist }|--|{ Song
 
 PlaylistCategory |o--|{ Playlist
-User ||--|{ Playlist
+User ||--o{ Playlist
 Playlist }o--o{ Song
 
-
+PodcastCategory |o--|{ Podcast
+User ||--o{ Podcast
 @enduml
