@@ -91,4 +91,6 @@ entity Concert {
     lon : DOUBLE
     lat : DOUBLE
 }
+
+Artist }|--|{ Album
 @enduml
