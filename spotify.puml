@@ -46,11 +46,33 @@ entity Playlist {
     * user_id : VARCHAR
 }
 
-entity Podcast {
+entity PodcastCategory {
+     * id : VARCHAR
+        --
+     * name : VARCHAR
+     * image : VARCHAR
+     * icon : VARCHAR
+}
 
+entity Podcast {
+    * id : VARCHAR
+        --
+    * name : VARCHAR
+    about : TEXT
+    image : VARCHAR
+    category_id : VARCHAR
+    * user_id : VARCHAR
 }
 
 entity Episode {
+
+}
+
+entity User {
+
+}
+
+entity Concert {
 
 }
 @enduml
